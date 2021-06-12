@@ -1,5 +1,8 @@
 let answers = generatePage
 const fs = require('fs');
+const managerAnswers = require('../lib/profile')
+
+//([managerAnswers, internAnswers, employeeAnswers])
 
   let html = `<!DOCTYPE html>
     <html lang="en">
@@ -22,9 +25,12 @@ const fs = require('fs');
     </body>
     </html>`;
     
-    function generatePage(answers) {
-        console.log(answers)
-    }
+    function generatePage(html) {
+        console.log(managerAnswers)
+        fs.writeFile('generatedReadme.md', html.join(''), (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+}
         
 
 module.exports= generatePage;
