@@ -8,9 +8,9 @@
   - [Questions](#questions)
   - [License](#license)
   ## Description 
-  An online/offline budget tracker that allows users to add expenses and deposits with or without a connection.
+  A application that uses inquiror to create a team profile.
   ## Installation
-  1. Clone the repository 2. Run "npm i" to install dependencies. 3. Run "npm start" to launch the application locally.
+  1. Clone the repository 2. Run "npm i" to install dependencies. 3. Run "node index.js" to launch the application locally.
   ## Usage
   https://christian-bryant2020.github.io/Progressive-Budget/
   ## Contributing
