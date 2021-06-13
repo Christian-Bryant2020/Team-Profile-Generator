@@ -15,8 +15,8 @@
   https://christian-bryant2020.github.io/Team-Profile-Generator/
   ## Contributing
   https://github.com/Christian-Bryant2020/Team-Profile-Generator
-  ## Demo
-  insert demo here
+  ## Video Demo
+  https://drive.google.com/file/d/1XVYtiGCaZdIN2Fi0TjGU8I-ZjuX3-Bw9/view?usp=drivesdk
   ## Questions
   Please reach out with any questions through the links below:
   - https://github.com/christian-bryant2020
