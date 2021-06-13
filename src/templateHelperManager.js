@@ -1,30 +1,30 @@
   
 function generateManager(answers) {
-    return `<div class="container" id="employee-box">
+    return `<div class="container" id="card">
     <div class="row">
-      <div class="col-md-12" id="employee-title">
+      <div class="col-md-12">
       <h1>${answers.name}</h1>
       <h2>Manager</h2>
       </div>
-      <div class="col-md-12" id="employee-description">
+      <div class="col-md-12">
         <h5>ID: ${answers.id}</h5>
         <hr>
         <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
         <hr>
-        <h5>Office Number: ${answers.office}</h5>
+        <h5>Office Number: ${answers.officeNumber}</h5>
       </div>
     </div>
   </div>`
   }
 
   function generateIntern(answers) {
-    return `<div class="container" id="employee-box">
+    return `<div class="container" id="card">
     <div class="row">
-      <div class="col-md-12" id="employee-title">
+      <div class="col-md-12">
       <h1>${answers.name}</h1>
       <h2>Intern</h2>
       </div>
-      <div class="col-md-12" id="employee-description">
+      <div class="col-md-12">
         <h5>ID: ${answers.id}</h5>
         <hr>
         <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
@@ -36,13 +36,13 @@ function generateManager(answers) {
   }
   
   function generateEngineer(answers) {
-    return `<div class="container" id="employee-box">
+    return `<div class="container" id="card">
     <div class="row">
-      <div class="col-md-12" id="employee-title">
+      <div class="col-md-12">
       <h1>${answers.name}</h1>
       <h2>Engineer</h2>
       </div>
-      <div class="col-md-12" id="employee-description">
+      <div class="col-md-12">
         <h5>ID: ${answers.id}</h5>
         <hr>
         <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
@@ -53,4 +53,4 @@ function generateManager(answers) {
   </div>`
   }
   
-  module.exports = {generateManager, generateIntern, generateEngineer};
+  module.exports = generateManager
