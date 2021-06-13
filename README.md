@@ -12,9 +12,9 @@
   ## Installation
   1. Clone the repository 2. Run "npm i" to install dependencies. 3. Run "node index.js" to launch the application locally.
   ## Usage
-  https://christian-bryant2020.github.io/Progressive-Budget/
+  https://christian-bryant2020.github.io/Team-Profile-Generator/
   ## Contributing
-  https://github.com/Christian-Bryant2020/Progressive-Budget
+  https://github.com/Christian-Bryant2020/Team-Profile-Generator
   ## Demo
   insert demo here
   ## Questions
