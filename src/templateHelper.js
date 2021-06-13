@@ -1,36 +1,56 @@
-let answers = generatePage
-const fs = require('fs');
-const managerAnswers = require('../lib/profile')
+  
+function generateManager(answers) {
+    return `<div class="container" id="employee-box">
+    <div class="row">
+      <div class="col-md-12" id="employee-title">
+      <h1>${answers.name}</h1>
+      <h2>Manager</h2>
+      </div>
+      <div class="col-md-12" id="employee-description">
+        <h5>ID: ${answers.id}</h5>
+        <hr>
+        <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
+        <hr>
+        <h5>Office Number: ${answers.office}</h5>
+      </div>
+    </div>
+  </div>`
+  }
 
-//([managerAnswers, internAnswers, employeeAnswers])
-
-  let html = `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link href="./style.css" rel="stylesheet">
-        <title>Team Profile</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <h1 class="ms-auto me-auto p-4">Profile</h1>
-        </nav>
-        <div class="container">
-            <div class="row row-cols-auto">   
-                </div>    
-        </div>
-    </body>
-    </html>`;
-    
-    function generatePage(html) {
-        console.log(managerAnswers)
-        fs.writeFile('generatedReadme.md', html.join(''), (err) =>
-        err ? console.error(err) : console.log('Success!')
-    );
-}
-        
-
-module.exports= generatePage;
+  function generateIntern(answers) {
+    return `<div class="container" id="employee-box">
+    <div class="row">
+      <div class="col-md-12" id="employee-title">
+      <h1>${answers.name}</h1>
+      <h2>Intern</h2>
+      </div>
+      <div class="col-md-12" id="employee-description">
+        <h5>ID: ${answers.id}</h5>
+        <hr>
+        <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
+        <hr>
+        <h5>School: ${answers.school}</h5>
+      </div>
+    </div>
+  </div>`
+  }
+  
+  function generateEngineer(answers) {
+    return `<div class="container" id="employee-box">
+    <div class="row">
+      <div class="col-md-12" id="employee-title">
+      <h1>${answers.name}</h1>
+      <h2>Engineer</h2>
+      </div>
+      <div class="col-md-12" id="employee-description">
+        <h5>ID: ${answers.id}</h5>
+        <hr>
+        <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
+        <hr>
+        <h5><a href='https://github.com/${answers.github}' target='_blank'/>GitHub Profile</a></h5>
+      </div>
+    </div>
+  </div>`
+  }
+  
+  module.exports = {generateManager, generateIntern, generateEngineer};
