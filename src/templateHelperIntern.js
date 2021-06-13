@@ -47,7 +47,7 @@ function generateManager(answers) {
         <hr>
         <h5><a href="mailto:${answers.email}">${answers.email}</a></h5>
         <hr>
-        <h5><a href='https://github.com/${answers.github}' target='_blank'/>GitHub Profile</a></h5>
+        <h5><a href='https://github.com/${answers.gitHub}' target='_blank'/>GitHub Profile</a></h5>
       </div>
     </div>
   </div>`
